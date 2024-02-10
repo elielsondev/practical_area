@@ -118,3 +118,14 @@ console.log(2 <= "1"); // false
 console.log(2 <= 1); // false
 console.log(2 <= 2); // true
 console.log(1 <= 2); // true
+
+// Array:
+let array = [1, 2, 3, 4, 5];
+let array2 = ['Yeshua', 'Elielson', 'Yuri'];
+let array3 = [true, false, true];
+let array4 = [1, 'Yeshua', true];
+
+// For:
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+};
