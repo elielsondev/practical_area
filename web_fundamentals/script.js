@@ -26,3 +26,27 @@ let mod = n1 % n2; // resto da divisão de n1 por n2;
 let exp = n1 ** n2; // 2 elevado a 10
 let inc =  ++n1; // n1 = n1 + 1;
 let dec = --n2; // n2 = n2 - 1;
+
+// if/else:
+let statusSignal = 'green';
+if (statusSignal === 'green') {
+    console.log('Drive');
+}
+else if (statusSignal === 'yellow') {
+    console.log('Prepare to stop');
+}
+else {
+    console.log('Stop');
+};
+
+// switch:
+switch (statusSignal) {
+    case 'green':
+        console.log('Drive');
+        break;
+    case 'yellow':
+        console.log('Prepare to stop');
+        break;
+    default:
+        console.log('Stop');
+};
