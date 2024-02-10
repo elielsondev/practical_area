@@ -6,7 +6,6 @@ let name = 'Yeshua';
 let age = 33;
 let isMarried = false;
 
-
 // Tipos primitivos:
 let name2 = 'Elielson'; // string
 let age2 = 33; // number
@@ -29,6 +28,7 @@ let dec = --n2; // n2 = n2 - 1;
 
 // if/else:
 let statusSignal = 'green';
+
 if (statusSignal === 'green') {
     console.log('Drive');
 }
@@ -50,3 +50,71 @@ switch (statusSignal) {
     default:
         console.log('Stop');
 };
+
+// Operadores lógicos:
+
+// && (AND) Só retorna true apenas quando as duas condições forem verdadeiras.
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+// || (OR) Só retorna falso quando ambas condições forem falsas.
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+
+// ! (NOT) Ele é capaz de inverter o valor booleano de um elemento.
+console.log(!true); // false
+console.log(!false); // true
+
+// Operadores de comparação:
+
+// == (IGUAL) Retorna verdadeiro caso os operandos sejam iguais.
+console.log(1 == "1"); // true
+console.log(1 == 1); // true
+console.log(1 == 2); // false
+
+// != (NÃO IGUAL) Retorna verdadeiro caso os operandos não sejam iguais.
+console.log(1 != "1"); // false
+console.log(1 != 1); // false
+console.log(1 != 2); // true
+
+// === (ESTRITAMENTE IGUAL) Retorna verdadeiro caso os operandos sejam iguais e do mesmo tipo.
+console.log(1 === "1"); // false
+console.log(1 === 1); // true
+console.log(1 === 2); // false
+
+// !== (ESTRITAMENTE NÃO IGUAL) Retorna verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo.
+console.log(1 !== "1"); // true
+console.log(1 !== 1); // false
+console.log(1 !== 2); // true
+
+// > (MAIOR QUE) Retorna verdadeiro caso o operando da esquerda seja maior que o da direita.
+console.log(1 > "1"); // false
+console.log(2 > "1"); // true
+console.log(2 > 1); // true
+console.log(2 > 2); // false
+console.log(1 > 2); // false
+
+// >= (MAIOR QUE OU IGUAL) Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita.
+console.log(1 >= "1"); // true
+console.log(2 >= "1"); // true
+console.log(2 >= 1); // true
+console.log(2 >= 2); // true
+console.log(1 >= 2); // false
+
+// < (MENOR QUE) Retorna verdadeiro caso o operando da esquerda seja menor que o da direita.
+console.log(1 < "1"); // false
+console.log(2 < "1"); // false
+console.log(2 < 1); // false
+console.log(2 < 2); // false
+console.log(1 < 2); // true
+
+// <= (MENOR QUE OU IGUAL) Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita.
+console.log(1 <= "1"); // true
+console.log(2 <= "1"); // false
+console.log(2 <= 1); // false
+console.log(2 <= 2); // true
+console.log(1 <= 2); // true
