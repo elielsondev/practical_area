@@ -129,3 +129,30 @@ let array4 = [1, 'Yeshua', true];
 for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 };
+
+// for/in:
+for (let i in array) {
+    console.log(array[i]); // 1, 2, 3, 4, 5
+};
+
+let car = { type: "Fiat", model: "500", color: "white"};
+
+for (let index in car) {
+console.log(index, car[index]);
+}
+
+// for/of:
+for (let i of array) {
+    console.log(i); // 1, 2, 3, 4, 5
+};
+
+let food = ["hamburguer", "bife", "acarajé"];
+
+for (let value of food) {
+    console.log(value);
+}
+
+let word = "Hello";
+for (let letter of word) {
+    console.log(letter);
+}
